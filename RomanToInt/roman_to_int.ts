@@ -13,9 +13,6 @@ function romanToInt(s: string): number {
     s.split('').forEach((char, index) => {
         const current = romanMap[char];
         const next = romanMap[s[index + 1]];
-        console.log('current', current);
-        console.log('next', next);
-        console.log('result', result);
 
         if (current < next) {
             result -= current;
